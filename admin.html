@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salma Cab Service - Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">🚗 Salma Cab Service - Admin</div>
+    <nav>
+      <a href="index.html">User View</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+  <main>
+    <div id="admin-lock">
+      <h2>Admin Login</h2>
+      <form id="admin-login-form">
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="admin-password" required>
+        </div>
+        <button type="submit" class="search-btn">Unlock</button>
+      </form>
+      <div id="admin-error" style="color:red; margin-top:1rem;"></div>
+    </div>
+    <div id="admin-panel" style="display:none;">
+      <h2>Manage Rides</h2>
+      <div id="ride-admin"></div>
+      <h2>Bookings Received</h2>
+      <div id="admin-bookings"></div>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 Salma Cab Service. All rights reserved.
+  </footer>
+  <script src="admin.js"></script>
+</body>
+</html>
