@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salma Cab Service - Find Your Ride</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">🚗 Salma Cab Service</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+  <main>
+    <section class="search-section">
+      <h2>Find Your Ride</h2>
+      <form id="search-form">
+        <div class="form-group">
+          <label>From</label>
+          <input type="text" id="from" placeholder="City or Location" required>
+        </div>
+        <div class="form-group">
+          <label>To</label>
+          <input type="text" id="to" placeholder="Destination" required>
+        </div>
+        <div class="form-group">
+          <label>Date</label>
+          <input type="date" id="date" required>
+        </div>
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+    </section>
+    <section class="results-section" id="ride-list" style="display:none;"></section>
+    <div id="booking-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h3>Book Ride</h3>
+        <form id="booking-form">
+          <input type="hidden" id="book-ride-index">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="user-name" required>
+          </div>
+          <div class="form-group">
+            <label>Mobile Number</label>
+            <input type="tel" id="user-mobile" required>
+          </div>
+          <div class="form-group">
+            <label>Seats to Book</label>
+            <input type="number" id="user-seats" min="1" required>
+          </div>
+          <button type="submit" class="search-btn">Confirm Booking</button>
+        </form>
+        <div id="booking-confirmation" style="display:none;"></div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 Salma Cab Service. All rights reserved.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
